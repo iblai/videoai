@@ -12,7 +12,7 @@
   "scripts": {
     "prebuild": "next telemetry disable",
     "build": "next build",
-    "typecheck": "tsgo --noEmit",
+    "typecheck": "tsc --noEmit",
     "predev": "next telemetry disable",
     "dev": "next dev",
     "prelint": "next telemetry disable",
@@ -99,13 +99,14 @@
     "@types/node": "^22",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "typescript": "^7.0.0",
     "@vitejs/plugin-react": "^6.0.1",
     "@vitest/coverage-v8": "^4.1.6",
     "dotenv": "^17.4.2",
     "jsdom": "^29.1.1",
     "release-it": "^20.0.1",
     "tailwind-scrollbar": "^4.0.2",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.2"
   }
